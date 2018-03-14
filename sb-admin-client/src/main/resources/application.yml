@@ -1,0 +1,14 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: admin-client
+  boot:
+    admin:
+      url: http://localhost:8080
+management:
+  security:
+    enabled: false
+logging:
+  file: logs/${spring.application.name}.log
+  level: info

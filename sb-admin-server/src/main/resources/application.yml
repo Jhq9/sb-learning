@@ -1,0 +1,15 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: admin-server
+  boot:
+    admin:
+      url: http://localhost:${server.port}
+      context-path: /admin
+management:
+  security:
+    enabled: false
+logging:
+  file: logs/${spring.application.name}.log
+  level: info
